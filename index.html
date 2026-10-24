@@ -31,6 +31,7 @@
       <div class="nav-links" id="nav-links">
         <a href="#work">Work</a>
         <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
         <a href="#about">About</a>
         <a class="nav-cta" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
       </div>
@@ -266,36 +267,89 @@
       </div>
     </section>
 
-    <!-- Pricing -->
-    <section class="pricing-band">
-      <div class="container pricing-inner">
-        <div>
-          <p class="eyebrow">INTRODUCTORY PACKAGE</p>
-          <h2>A simple one-page website</h2>
-          <p>For a clear, mobile-friendly presentation of your business.</p>
-        </div>
-
-        <div class="price-side">
+    <!-- Pricing plans -->
+    <section class="section pricing-section" id="pricing">
+      <div class="container">
+        <div class="section-heading">
           <div>
-            <span>Starting from</span>
-            <strong>₹1,499</strong>
-            <small>Final price depends on scope.</small>
+            <p class="eyebrow">CLEAR, UPFRONT PRICING</p>
+            <h2>Choose a plan.<br><span>Build your presence.</span></h2>
           </div>
-          <a class="button button-light" href="#contact">Discuss a project <span aria-hidden="true">↗</span></a>
+          <p class="section-intro">Straightforward website packages for shops, salons, service providers, and small businesses. We'll confirm the final scope before work begins.</p>
+        </div>
+        <div class="plans-grid">
+          <article class="plan-card">
+            <p class="plan-label">STARTER</p>
+            <h3>Basic Landing Page</h3>
+            <p class="plan-price">₹1,499 <span>/ starting price</span></p>
+            <p class="plan-summary">A simple online home for your business.</p>
+            <ul class="plan-features">
+              <li>One responsive webpage</li>
+              <li>Business details and services</li>
+              <li>WhatsApp, call and email links</li>
+              <li>Basic SEO title and description</li>
+              <li>One revision round</li>
+            </ul>
+            <a class="button button-secondary plan-button" href="https://wa.me/917594922010?text=Hi%20Nexshaly%20Studio%2C%20I%27m%20interested%20in%20the%20Basic%20Landing%20Page%20package%20starting%20at%20%E2%82%B91%2C499." target="_blank" rel="noopener noreferrer">Enquire on WhatsApp ↗</a>
+          </article>
+          <article class="plan-card plan-featured">
+            <span class="plan-badge">POPULAR CHOICE</span>
+            <p class="plan-label">BUSINESS</p>
+            <h3>Business Starter Website</h3>
+            <p class="plan-price">₹1,999 <span>/ starting price</span></p>
+            <p class="plan-summary">A polished, mobile-friendly website for your business.</p>
+            <ul class="plan-features">
+              <li>Professional responsive design</li>
+              <li>Business introduction and services/products</li>
+              <li>WhatsApp and email contact links</li>
+              <li>Basic SEO setup</li>
+              <li>Free static hosting where suitable</li>
+              <li>One revision round</li>
+            </ul>
+            <a class="button button-primary plan-button" href="https://wa.me/917594922010?text=Hi%20Nexshaly%20Studio%2C%20I%27m%20interested%20in%20the%20Business%20Starter%20Website%20package%20starting%20at%20%E2%82%B91%2C999." target="_blank" rel="noopener noreferrer">Enquire on WhatsApp ↗</a>
+          </article>
+          <article class="plan-card">
+            <p class="plan-label">EXTENDED</p>
+            <h3>Extended Business Website</h3>
+            <p class="plan-price">₹3,999<span>+</span></p>
+            <p class="plan-summary">More room for multiple services and pages.</p>
+            <ul class="plan-features">
+              <li>Multiple pages or sections</li>
+              <li>Navigation and service/product pages</li>
+              <li>Contact and map links</li>
+              <li>Basic SEO setup</li>
+              <li>Publishing assistance</li>
+              <li>Two revision rounds</li>
+            </ul>
+            <a class="button button-secondary plan-button" href="https://wa.me/917594922010?text=Hi%20Nexshaly%20Studio%2C%20I%27d%20like%20to%20discuss%20the%20Extended%20Business%20Website%20package%20starting%20at%20%E2%82%B93%2C999." target="_blank" rel="noopener noreferrer">Enquire on WhatsApp ↗</a>
+          </article>
+        </div>
+        <div class="pricing-scope">
+          <strong>Please note:</strong> Prices are starting prices; the final quote depends on the agreed scope and content. Domain registration and renewal, paid hosting, business email, online payments, booking systems, databases/login features, extra pages, and ongoing maintenance may cost extra. Free GitHub Pages hosting is suitable for static websites, not server-side PHP or database features. Timeline, payment schedule, and revision limits are agreed in writing before work starts.
         </div>
       </div>
     </section>
 
-    <div class="container scope-note">
-      <p>
-        <strong>Package scope:</strong> one-page layout, business-approved
-        text and images, services or product section, and contact links.
-        Domain registration, paid hosting, online payments, booking systems,
-        databases, and additional features may cost extra. Final scope,
-        timeline, payment schedule, and revisions are agreed in writing
-        before work starts.
-      </p>
-    </div>
+    <style>
+      .pricing-section { background: radial-gradient(ellipse at 50% 0%, rgba(36, 92, 190, .12), transparent 55%); }
+      .plans-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1.25rem; align-items:stretch; margin-top:2rem; }
+      .plan-card { position:relative; display:flex; flex-direction:column; padding:clamp(1.25rem,2.5vw,2rem); border:1px solid rgba(125,157,220,.24); border-radius:22px; background:rgba(12,19,42,.76); box-shadow:0 18px 55px rgba(0,0,0,.15); }
+      .plan-featured { border-color:rgba(63,190,255,.8); box-shadow:0 0 0 1px rgba(63,190,255,.12),0 20px 65px rgba(25,115,255,.13); }
+      .plan-label { margin:0 0 .65rem; color:#63caff; font-size:.75rem; font-weight:700; letter-spacing:.16em; }
+      .plan-card h3 { margin:0 0 .9rem; font-family:"Space Grotesk",sans-serif; font-size:clamp(1.2rem,2vw,1.55rem); line-height:1.25; }
+      .plan-price { margin:0 0 .75rem; color:#fff; font-size:clamp(1.7rem,3vw,2.25rem); font-weight:700; letter-spacing:-.04em; }
+      .plan-price span { color:#a9b6d3; font-size:.78rem; font-weight:500; letter-spacing:0; }
+      .plan-summary { min-height:3rem; color:#bdc8df; line-height:1.6; }
+      .plan-features { display:grid; gap:.7rem; margin:1rem 0 1.6rem; padding:0; list-style:none; color:#e0e7f7; }
+      .plan-features li { position:relative; padding-left:1.5rem; line-height:1.45; }
+      .plan-features li::before { content:"✓"; position:absolute; left:0; color:#54d6ff; font-weight:700; }
+      .plan-button { margin-top:auto; justify-content:center; text-align:center; }
+      .plan-badge { position:absolute; top:-12px; right:18px; padding:.35rem .65rem; border-radius:999px; background:linear-gradient(90deg,#16b8e9,#7866ff); color:#071126; font-size:.68rem; font-weight:800; letter-spacing:.06em; }
+      .pricing-scope { margin-top:1.5rem; padding:1.1rem 1.25rem; border:1px solid rgba(125,157,220,.18); border-radius:14px; color:#b8c4dd; font-size:.9rem; line-height:1.7; }
+      .pricing-scope strong { color:#e9f2ff; }
+      @media(max-width:900px) { .plans-grid { grid-template-columns:1fr 1fr; } .plan-featured { order:-1; } }
+      @media(max-width:620px) { .plans-grid { grid-template-columns:1fr; gap:1.4rem; } .plan-featured { order:0; } .plan-summary { min-height:0; } }
+    </style>
 
     <!-- Contact -->
     <section class="section contact-section" id="contact">
@@ -324,7 +378,7 @@
             <div>
               <small>WHATSAPP</small>
               <a id="whatsapp-link"
-                 href="https://wa.me/916238321020"
+                 href="https://wa.me/917594922010"
                  target="_blank" rel="noopener noreferrer">
                 Message us on WhatsApp
               </a>
