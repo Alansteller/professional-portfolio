@@ -17,7 +17,7 @@
     </a>
     <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
     <nav id="mainNav">
-      <a href="#ideas">Website ideas</a><a href="#work">Our work</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a>
+      <a href="#roast">Roast bot 🔥</a><a href="#ideas">Website ideas</a><a href="#work">Our work</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a>
       <a class="nav-cta" href="#contact">Let's talk <span>↗</span></a>
     </nav>
   </header>
@@ -48,6 +48,49 @@
         </div>
         <div class="float-chip chip-top"><span class="chip-dot cyan"></span> Designed to stand out</div>
         <div class="float-chip chip-bottom"><span class="chip-dot purple"></span> Made for real customers</div>
+      </div>
+    </section>
+
+
+    <section class="section roast-section" id="roast">
+      <div class="section-heading">
+        <p class="eyebrow">A FRIENDLY BUSINESS ROAST · ZERO PERSONAL ATTACKS</p>
+        <h2>Let us roast your online presence. <span class="gradient-text">Lovingly.</span> 🔥</h2>
+        <p>Pick your business and its biggest headache. Our totally-not-certified digital roast bot will deliver a joke and a genuinely useful fix.</p>
+      </div>
+      <div class="roast-panel panel">
+        <div class="roast-bot" aria-hidden="true">
+          <div class="bot-aura"></div><div class="bot-face"><span class="bot-eye"></span><span class="bot-eye"></span><span class="bot-mouth"></span></div>
+          <span class="bot-status"><span class="pulse"></span> ROAST BOT ONLINE</span>
+        </div>
+        <div class="roast-controls">
+          <label for="roastBusiness">Choose your business</label>
+          <select id="roastBusiness">
+            <option value="Mobile shop">Mobile shop 📱</option>
+            <option value="Restaurant">Restaurant / café 🍕</option>
+            <option value="Salon">Salon / beauty business 💇</option>
+            <option value="Gym">Gym / fitness trainer 💪</option>
+            <option value="Freelancer">Freelancer / personal brand 🧑‍💻</option>
+            <option value="Home service">Home service 🛠️</option>
+          </select>
+          <label for="roastProblem">What's your biggest online headache?</label>
+          <select id="roastProblem">
+            <option value="prices">Customers keep asking for prices</option>
+            <option value="location">Nobody knows where to find me</option>
+            <option value="invisible">My business is invisible online</option>
+            <option value="repeat">I answer the same questions all day</option>
+            <option value="trust">People want proof before they trust me</option>
+          </select>
+          <button class="button primary full" id="roastButton" type="button">Roast my website 🔥</button>
+        </div>
+        <div class="roast-result" id="roastResult" aria-live="polite">
+          <span class="eyebrow">YOUR FRIENDLY DIAGNOSIS</span>
+          <h3 id="roastTitle">Your business has entered the chat.</h3>
+          <p id="roastCopy">Pick your business and your biggest headache, then prepare for a tiny roast and a practical fix.</p>
+          <div class="roast-fix"><span>THE ACTUAL FIX</span><p id="roastFix">A clear website can help customers find important information without needing to message you first.</p></div>
+          <button class="button secondary full" id="roastWhatsApp" type="button">Help me fix it ↗</button>
+          <p class="small-note">Jokes are aimed at website problems, never at people. No real AI or data collection — just JavaScript and good-natured sass.</p>
+        </div>
       </div>
     </section>
 
