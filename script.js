@@ -6,7 +6,7 @@ const budget = $('budget');
 const ideas = {
   'Restaurant / café': { title: 'A menu customers can find in seconds', description: 'Help hungry customers understand what you serve and how to reach you.', features: ['Menu and popular items', 'Food photo gallery and opening hours', 'Location map and WhatsApp enquiry'] },
   'Salon / beauty business': { title: 'Turn browsing into booking enquiries', description: 'Show your style, services and prices before a customer walks through the door.', features: ['Service list and starting prices', 'Photo gallery for your work', 'Location and appointment enquiry link'] },
-  'Retail shop': { title: 'Give your shop a useful online window', description: 'Show a selection of products and make it simple for people to ask about availability.', features: ['Product cards and prices', 'WhatsApp product enquiries', 'Store location and opening hours'] },
+  'Mobile shop': { title: 'Help customers discover their next phone', description: 'Show phones, accessories and repair services, then make it easy for customers to ask about prices and availability.', features: ['Smartphone and accessory product cards', 'WhatsApp enquiries about prices and stock', 'Repair services, store location and opening hours'] },
   'Gym / fitness trainer': { title: 'Show people what their next step looks like', description: 'Explain your coaching or membership options and make joining feel straightforward.', features: ['Training and membership details', 'Trainer introduction and testimonials', 'Trial-session enquiry link'] },
   'Freelancer / personal brand': { title: 'Let your work do the talking', description: 'Build trust with a clear introduction, examples of your work and a direct way to contact you.', features: ['Portfolio and service overview', 'About section and testimonials', 'Contact links and enquiry form'] },
   'Home service': { title: 'Make it easy to ask for your service', description: 'Tell local customers what you do, where you work and how to request a quote.', features: ['Service list and service area', 'Photos or examples of past work', 'Call and WhatsApp quote links'] }
@@ -20,9 +20,14 @@ function renderIdea() {
     const li = document.createElement('li'); li.textContent = feature; return li;
   }));
 }
-$('generateIdea').addEventListener('click', renderIdea);
+$('generateIdea').addEventListener('click', (event) => {
+  event.preventDefault();
+  renderIdea();
+  $('ideaResult')?.classList.add('result-updated');
+});
 businessType.addEventListener('change', renderIdea);
 businessGoal.addEventListener('change', renderIdea);
+budget.addEventListener('change', renderIdea);
 function enquiryText(extra = '') {
   return `Hi Nexshaly Studio! My business type is ${businessType.value}. My goal is ${businessGoal.value}. My budget is ${budget.value}.${extra ? '\nPlan of interest: ' + extra : ''} Please suggest the best next step.`;
 }
