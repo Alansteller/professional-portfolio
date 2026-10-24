@@ -1,26 +1,17 @@
-# Web Portfolio
+NEXSHALY STUDIO REDESIGN
 
-A responsive personal portfolio website made with HTML, CSS, and JavaScript.
+Files:
+- index.html: website structure and small JavaScript interactions
+- style.css: responsive neon dark styling and animations
 
-## Files
-- `index.html` — page content, navigation, contact form behavior
-- `style.css` — responsive design and layout
+PUBLISH TO GITHUB PAGES
+1. Download/extract the ZIP.
+2. Open your repository: https://github.com/Alansteller/professional-portfolio
+3. Upload/replace index.html and style.css in the repository root (same folder as the current index.html).
+4. Commit changes to main.
+5. Open Settings > Pages and confirm deployment is from main branch / root.
+6. Wait a few minutes, then visit https://alansteller.github.io/professional-portfolio/ and hard-refresh with Ctrl+F5.
 
-## Before publishing
-1. Open `index.html`.
-2. Find `const CONTACT_EMAIL = "YOUR_EMAIL@example.com";` and replace it with your email address.
-3. Find `const WHATSAPP_NUMBER = "";` and add your number in international format with digits only (optional), e.g. `919876543210`.
-4. Review the project description and starting price so they match what you are comfortable offering.
-5. Test the page on desktop and mobile.
+Contact links retained: nexshalystudio@gmail.com and WhatsApp +91 75949 22010. Demo link retained: https://alansteller.github.io/attingal-mobile-hub/
 
-## Publish with GitHub Pages
-1. Create a new GitHub repository, for example `web-portfolio`.
-2. Upload `index.html`, `style.css`, and this `README.md` to the repository root.
-3. In repository Settings → Pages, choose **Deploy from a branch**, branch `main`, folder `/(root)`.
-4. Save and wait for the deployment URL to appear.
-5. Open the published site and test the navigation and contact links.
-
-The contact form uses `mailto:`. It opens the visitor's email app and does not send or store form data on the website. Remote Google Fonts require internet access. The featured project links to the existing Attingal Mobile Hub demo.
-
-## Customization
-Search for `Web Portfolio` to change the brand label. This version deliberately avoids describing the developer as a beginner or using local-only positioning.
+The contact form opens the visitor email application; it does not store or send form data from a server. This is a static site and does not support server-side PHP or databases on GitHub Pages.
