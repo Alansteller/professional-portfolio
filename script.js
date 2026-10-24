@@ -13,7 +13,8 @@ const ideas = {
 };
 let selectedPlan = '';
 function renderIdea() {
-  const idea = ideas[businessType.value] || ideas['Restaurant / café'];
+  const selectedBusiness = businessType.value;
+  const idea = ideas[selectedBusiness] || ideas['Restaurant / café'];
   $('ideaTitle').textContent = idea.title;
   $('ideaDescription').textContent = idea.description + ' Goal: ' + businessGoal.value.toLowerCase() + '.';
   $('ideaFeatures').replaceChildren(...idea.features.map((feature) => {
